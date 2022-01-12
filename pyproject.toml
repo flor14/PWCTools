@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "PWCTools"
-version = "0.1.0"
+version = "0.2.0"
 description = "Set of tools to use Pesticide in Water Calculator Model"
 authors = ["Florencia D'Andrea"]
 license = "GNU General Public License v3.0"
