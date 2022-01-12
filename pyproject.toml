@@ -6,8 +6,7 @@ authors = ["Florencia D'Andrea"]
 license = "GNU General Public License v3.0"
 readme = "README.md"
 packages = [
-    { include = "my_package" },
-    { include = "extra_package/**/*.py" },
+    { include = "poetry.core.masonry.api" }
 ]
 
 [tool.poetry.dependencies]
