@@ -25,8 +25,6 @@ input_data = {'date': ["01/01/81", "02/01/81", "03/01/81", "04/01/81"],
 
 input_data = pd.DataFrame(input_data)
 
-
-
 PWC_fg(data = input_data,
        date = "date", 
        start = "02/01/81",
@@ -42,7 +40,6 @@ PWC_years(pwc_data = pwc_data)
 PWC_complete(pwc_data = pwc_data)
 PWC_save(pwc_data = pwc_data,
          save_in ="wf.dvf" )
-
 ```
 
 ## Contributing
