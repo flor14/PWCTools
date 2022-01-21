@@ -1,10 +1,10 @@
 import pandas as pd
 import numpy as np
 
-
-
 def PWC_fg(data, date, start, end, format_date, temp_celsius, precip_cm, ws10_cm_s, pevp_cm, solr_lang):
     """Subset the initial dataset and rearrange the columns"""
+    if not isinstance(data, pd.DataFrame):  
+        raise TypeError("'word_counts' should be of type 'Counter'.")
     # Convert to dates
     data.date = pd.to_datetime(data[date], format = format_date)
 
