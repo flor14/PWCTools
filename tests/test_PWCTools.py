@@ -20,6 +20,21 @@ def test_PWC_fg():
        solr_lang = 'solr_lang')
     assert_frame_equal(result, test_data_pwc_fg)
 
+def test_PWC_years():
+    test_data_pwc_fg = pd.read_csv("tests/data_pwc_fg.csv")
+    result = PWC_years(pwc_data = test_data_pwc_fg)
+    assert_frame_equal(result, test_data_pwc_fg)
+
+def test_PWC_complete():
+    test_data_pwc_years = pd.read_csv("tests/data_pwc_years.csv")
+    result = PWC_complete(pwc_data = test_data_pwc_years)
+    assert_frame_equal(result, test_data_pwc_years)
+
+def test_pwc_save():
+    test_data_pwc_complete = pd.read_csv("tests/data_pwc_complete.csv")
+    PWC_save(pwc_data = test_data_pwc_complete, save_in ="test.dvf" )
+    filecmp.cmp('wf.dvf', 'test.dvf')
+    
 def test_PWC_fg_warning():
     with pytest.raises(TypeError):
         data = 2
@@ -33,20 +48,3 @@ def test_PWC_fg_warning():
         ws10_cm_s = 'ws10_cm_s',
         pevp_cm = 'pevp_cm',
         solr_lang = 'solr_lang')
-
-def test_PWC_years():
-   test_data_pwc_fg = pd.read_csv("tests/data_pwc_fg.csv")
-   result = PWC_years(pwc_data = test_data_pwc_fg)
-   assert_frame_equal(result, test_data_pwc_fg)
-
-def test_PWC_complete():
-    test_data_pwc_years = pd.read_csv("tests/data_pwc_years.csv")
-    result = PWC_complete(pwc_data = test_data_pwc_years)
-    assert_frame_equal(result, test_data_pwc_years)
-
-def test_pwc_save():
-    test_data_pwc_complete = pd.read_csv("tests/data_pwc_complete.csv")
-    PWC_save(pwc_data = test_data_pwc_complete,
-         save_in ="test.dvf" )
-    filecmp.cmp('wf.dvf', 'test.dvf')
-    
