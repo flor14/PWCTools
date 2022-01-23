@@ -40,10 +40,10 @@ If you are proposing a feature:
 
 ## Get Started!
 
-Ready to contribute? Here's how to set up `PWCTools` for local development.
+Ready to contribute? Here's how to set up `pwctools` for local development.
 
-1. Download a copy of `PWCTools` locally.
-2. Install `PWCTools` using `poetry`:
+1. Download a copy of `pwctools` locally.
+2. Install `pwctools` using `poetry`:
 
     ```console
     $ poetry install
@@ -69,5 +69,5 @@ Before you submit a pull request, check that it meets these guidelines:
 
 ## Code of Conduct
 
-Please note that the `PWCTools` project is released with a 
+Please note that the `pwctools` project is released with a 
 Code of Conduct. By contributing to this project you agree to abide by its terms.

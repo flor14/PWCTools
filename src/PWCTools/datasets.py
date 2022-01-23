@@ -12,6 +12,6 @@ def get_cars():
     ----------
     .. [1] Cars dataset.
     """
-    with resources.path("PWCTools.data", "cars.txt") as f:
+    with resources.path("pwctools.data", "cars.txt") as f:
         data_file_path = f
     return data_file_path

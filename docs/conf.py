@@ -6,7 +6,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = u"PWCTools"
+project = u"pwctools"
 copyright = u"2022, Florencia D'Andrea"
 author = u"Florencia D'Andrea"
 
