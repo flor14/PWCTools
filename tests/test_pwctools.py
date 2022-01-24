@@ -1,4 +1,4 @@
-from pwctools.pwctools import PWC_fg, PWC_years, PWC_complete, PWC_save
+from src.pwctools.pwctools import PWC_fg, PWC_years, PWC_complete, PWC_save
 import pandas as pd
 from pandas._testing import assert_frame_equal
 import filecmp
